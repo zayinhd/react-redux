@@ -5,7 +5,6 @@ import Footer from "./components/navigation/Footer/Footer.jsx";
 import Input from "./components/Input/Input.jsx";
 
 import Card from "./components/Card/Card.jsx";
-import { useStateContext } from "./lib/tmdbContext.jsx";
 
 function App() {
     const [movies, setMovies] = useState("");

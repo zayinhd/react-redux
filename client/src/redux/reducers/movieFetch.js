@@ -1,5 +1,4 @@
 import axios from "axios";
-
 import {
     fetchMoviesRequest,
     fetchMoviesFailure,
@@ -11,7 +10,7 @@ export const fetchMovies = () => async () => {
 
     try {
         const response = await axios.get(
-            "https://api.themoviedb.org/3/movie/popular?api_key=3863e1ea20fbc5fb82f90870c40a14b1"
+            "https://themoviedb.org/3/movie/popular?api_key=3863e1ea20fbc5fb82f90870c40a14b1"
         );
 
         dispatch(fetchMoviesSuccess(response.data.results));
