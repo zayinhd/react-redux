@@ -1,4 +1,12 @@
 # Movo App
+Built and powered with TMDB with React-Redux,Mongoose, Nodejs, and Material UI.
+## Getting started - Clone repo
+To get started with this project, run
+  git clone https://github.com/zayinhd/movo-app.git in your cmd
+
+## Installation
+Install the project dependencies using npm:
+### `npm install` or `npm i`
 
 # Getting Started with Create React App
 
