@@ -1,27 +1,29 @@
-import { useState } from "react";
 import "./App.css";
-import Nav from "./components/navigation/index.jsx";
-import Footer from "./components/navigation/Footer/Footer.jsx";
-import Input from "./components/Input/Input.jsx";
-
-import Card from "./components/Card/Card.jsx";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Nav from "./components/navigation";
+import Footer from "./components/navigation/Footer/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
-    const [movies, setMovies] = useState("");
-    const [filteredMovies, setFilteredMovies] = useState([]);
-
-    const fetchMovies = async () => {
-        setMovies(data);
-    };
     return (
-        <div className="App">
-            <Nav />
-            <h1>Movo App</h1>
-            <hr />
-            <Input />
-            <Card />
-            <Footer />
-        </div>
+        <Router>
+            <div className="App">
+                <div className="App-content">
+                    <Nav />
+                    <div className="main-content">
+                        <Routes>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/about" element={<About />} />
+                            <Route path="/contact" element={<Contact />} />
+                        </Routes>
+                    </div>
+                    <Footer />
+                </div>
+            </div>
+        </Router>
     );
 }
 

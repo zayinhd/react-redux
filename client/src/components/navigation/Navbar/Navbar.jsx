@@ -1,19 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
-const Navbar = () => {
+import "./styles.css";
+const Navbar = ({ toggle }) => {
     return (
         <>
-            <AppBar position="fixed" >
-                <Typography component={ Link } to="/">
-                    Movo
-                </Typography>
-                <ul>
-                    <li>Movies</li>
-                    <li>What's New</li>
+            <div className="navbar">
+                <h3>React-Redux BoilerPlate</h3>
+                <div><button onClick={ toggle } className="toggle-btn">Menu</button></div>
+                <ul className="nav-links">
+                    <li>Home</li>
                     <li>About</li>
+                    <li>Contact</li>
                 </ul>
-            </AppBar>
+
+            </div>
         </>
     );
 };

@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px;
+}
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    list-style-type: none;
+    margin: 0 10px;
+    background-color: aquamarine;
+    padding: 5px;
+    border-radius: 5px;
+}
+.toggle-btn {
+    display: none;
+}
+@media screen and (max-width: 500px) {
+    .toggle-btn {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+    }
+}

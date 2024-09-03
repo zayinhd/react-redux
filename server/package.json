@@ -1,20 +1,22 @@
 {
     "name": "server",
     "version": "1.0.0",
-    "description": "",
+    "description": "Starter kit for creating React/Redux and Express apps",
     "main": "index.js",
     "type": "module",
     "scripts": {
-        "start": "nodemon index.js"
+        "client-server-install": "cd client npm i && cd server npm i",
+        "start": "nodemon index.js",
+        "server": "nodemon index.js",
+        "client": "npm start client"
     },
     "keywords": [],
-    "author": "",
+    "author": "zayin <zayinm300@gmail.com>",
     "license": "MIT",
     "dependencies": {
         "body-parser": "^1.20.2",
         "cors": "^2.8.5",
         "express": "^4.18.3",
-        "mongoose": "^8.2.1",
         "nodemon": "^3.1.0"
     }
 }

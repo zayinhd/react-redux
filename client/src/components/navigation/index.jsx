@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 
 import Navbar from "./Navbar/Navbar.jsx";
 import Sidebar from "./Sidebar/Sidebar.jsx";
@@ -10,11 +9,13 @@ const Nav = () => {
         setIsOpen(!isOpen);
     }
 
-    return
-    <>
-        <Sidebar isOpen={ isOpen } toggle={ toggle } />
-        <Navbar toggle={ toggle } />
-    </>;
+    return (
+        <>
+            <Sidebar isOpen={ isOpen } toggle={ toggle } />
+            <Navbar toggle={ toggle } />
+        </>
+    )
+
 };
 
 export default Nav;

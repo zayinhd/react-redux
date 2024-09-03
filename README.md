@@ -1,11 +1,16 @@
-# Movo App
-Built and powered with TMDB with React-Redux,Mongoose, Nodejs, and Material UI.
+# React Redux Express Boilerplate
+
+Starter kit for creating React/Redux Toolkit and Express apps
+
 ## Getting started - Clone repo
+
 To get started with this project, run
-  git clone https://github.com/zayinhd/movo-app.git in your cmd
+git clone https://github.com/zayinhd/react-redux-express-boilerplate.git in your cmd
 
 ## Installation
+
 Install the project dependencies using npm:
+
 ### `npm install` or `npm i`
 
 # Getting Started with Create React App
