@@ -9,9 +9,10 @@ git clone https://github.com/zayinhd/react-reduxTK-express-boilerplate.git in yo
 
 ## Installation
 
-Install the project dependencies using npm:
+Install the project dependencies using npm: 
 
-### `npm install` or `npm i`
+### `cd client npm install` or `npm i` and
+### `cd server npm install` or `npm i`
 
 # Getting Started with Create React App
 
